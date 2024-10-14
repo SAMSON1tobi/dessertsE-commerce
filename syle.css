@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  }
+  
+  .menu-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  /* Desserts */
+  .desserts-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 70%;
+  }
+  
+  .dessert-menu {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .dessert-menu img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .dessert-menu h2 {
+    text-align: left;
+    font-size: 12px;
+    margin: 7px 0 5px;
+  }
+  
+  .dessert-menu p{
+  text-align: left;
+  font-size: 10px;
+  color: rgb(238, 230, 230));
+  }
+  
+  .dessert-menu .price {
+    color: #ff5e00e1;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .add-to-cart {
+    display: flex;
+    background-color: white;
+    color: black;
+    border: 1px solid gray;
+    justify-content: space-between;
+    margin: -4px 25px;
+    padding: 2px 25px;
+    margin-bottom: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-to-cart p{
+    text-align: right;
+  }
+  
+  .add-to-cart img{
+    width: 18px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #ff4500;
+  }
+  
+  .dessert-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Cart Section */
+  .cart {
+    width: 30%;
+    height: 30%;
+    background-color: white;
+    border: 5px solid whitesmoke;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f84626;
+  }
+  
+  .cart-icon {
+    margin-top: 20px;
+  }
+  
+  .cart-icon img {
+    width: 80px;
+    height: auto;
+  }
+  
+  .cart-icon p {
+    margin-top: 10px;
+    color: #888;
+    font-size: 12px;
+  }
+  /* Media Queries */
+  
+  /* Tablet Portrait */
+  @media only screen and (max-width: 1024px) {
+    .desserts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .cart {
+      width: 30%;
+    }
+  }
+  
+  /* Mobile Landscape */
+  @media only screen and (max-width: 768px) {
+    .desserts-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .cart {
+      width: 100%;
+      margin-top: 20px;
+    }
+  
+    .menu-container {
+      flex-direction: column;
+    }
+  }
+  
+  /* Mobile Portrait */
+  @media only screen and (max-width: 480px) {
+    .dessert-card {
+      padding: 15px;
+    }
+  
+    .add-to-cart {
+      padding: 8px 15px;
+    }
+  
+    .cart h2 {
+      font-size: 18px;
+      color: #ff4500;
+    }
+  }
+  #total{
+    height:25px;
+    width: 90px;
+    background-color: whitesmoke;
+    color: black;
+    border: 1px solid lightcyan;
+    border-radius: 5px;
+  }
